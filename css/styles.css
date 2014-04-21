@@ -1,0 +1,163 @@
+﻿body {
+	border: none; padding: 0; margin: 0;
+	font-family: verdana,helvetica,arial,sans-serif;
+	color: #BBB0B0;
+}
+#sideNav {
+	width: 265px;
+	background-color: #773535;
+	position: absolute; top: 0; bottom: 0; left: 0;
+	overflow: hidden;
+}
+	#sideNav div {
+		padding: 20px;
+		border-bottom: solid 1px rgba(0,0,0,0.1); border-top: solid 1px rgba(255,255,255,0.05);
+		width: 225px;
+		-webkit-transition: all .2s;
+	}
+	#sideNav .navTitle {
+		text-transform: uppercase;
+	}
+	#sideNav .navLink:hover {
+		background-color: #212124;
+		border-right: 20px solid #FAE3CA;
+		width: 217px;
+		cursor: pointer;
+	}
+
+#mainContent{
+	position: absolute; left: 265px; top: 0; right: 0; bottom: 0;
+	background-color: #333336;
+}
+
+#banner{
+	position: absolute; top: 0; left: 0; right: 0;
+	background-color: #773535;
+	height: 59px;
+	border-bottom: solid 1px rgba(0,0,0,0.1); border-top: solid 1px rgba(255,255,255,0.05);
+}
+#logo{
+	text-align: center;
+	font-size: x-large;
+	padding-top: 20px;
+	text-transform:capitalize;
+}
+
+#contentBox{
+	position: absolute; top: 61px; left: 0px;
+	width: 700px;
+}
+
+.section {
+	opacity: 0;
+	-webkit-transition: all .4s linear 0s;
+	position: absolute;
+	pointer-events: none;
+}
+.sectionImage{
+	height: 600px; width: 212px;
+	pointer-events: none;
+}
+#welcomeSection{
+	padding: 30px;
+	width: 270px;
+	font-size: 28px;
+}
+
+.dot{
+	height: 12px; width: 12px;
+	border-radius: 12px; border: 3px solid #ff6a00;
+	background-color: #f8b17c;
+	-webkit-transition: all .4s linear 0s;
+	position: absolute;
+}
+.dot:hover{
+	height: 16px; width: 16px;
+	border: 3px solid #f8b17c;
+	background-color: #ff6a00;
+	-webkit-transform:translate(-2px, -2px);
+}
+
+#dot1-1{top: 200px; left: 80px;} /*kidney*/
+#dot1-2{top: 250px; left: 110px;} /*ureters*/
+#dot1-3{top: 270px; left: 100px;} /*urinary bladder*/
+#dot2-1{top: 50px; left: 100px;} /*The brain*/
+#dot2-2{top: 100px; left: 100px;} /*The 1st thoracic nerve*/
+#dot2-3{top: 550px; left: 65px;} /*nerves of the leg and foot*/
+#dot3-1{top: 60px; left: 100px;} /*mouth*/
+#dot3-2{top: 140px; left: 100px;} /*esophagus*/
+#dot3-3{top: 170px; left: 100px;} /*stomach*/
+#dot4-1{top: 75px; left: 100px;} /*lymph nodes*/
+#dot4-2{top: 290px; left: 130px;} /*Peyer's patches*/
+#dot4-3{top: 350px; left: 70px;} /*immune systrems of the leg and foot*/
+#dot5-1{top: 150px; left: 105px;} /*The heart*/
+#dot5-2{top: 125px; left: 100px;} /*brachiocephalic artery*/
+#dot5-3{top: 100px; left: 80px;} /*subclavian artery*/
+
+
+
+
+
+
+
+
+#urinarySection .sectionImage{
+	background-image: url(../img/Urinary.png);
+}
+#nervousSection .sectionImage{
+	background-image: url(../img/Nervous.png);
+}
+#digestiveSection .sectionImage{
+	background-image: url(../img/Digestive.png);
+}
+#immuneSection .sectionImage{
+	background-image: url(../img/Immune.png);
+}
+#cardiovascularSection .sectionImage{
+	background-image: url(../img/Cardiovascular.png);
+}
+
+
+#contentBox.welcome #welcomeSection{
+	opacity: 1;
+	pointer-events: all;
+}
+#contentBox.urinary #urinarySection{
+	opacity: 1;
+	pointer-events: all;
+}
+#contentBox.nervous #nervousSection{
+	opacity: 1;
+	pointer-events: all;
+}
+#contentBox.digestive #digestiveSection{
+	opacity: 1;
+	pointer-events: all;
+}
+#contentBox.immune #immuneSection{
+	opacity: 1;
+	pointer-events: all;
+}
+#contentBox.cardiovascular #cardiovascularSection{
+	opacity: 1;
+	pointer-events: all;
+}
+
+
+
+
+#blurbs div{
+	background-color: #fff;
+	border-radius: 6px;
+	border: solid 6px #777;
+	position: absolute;
+	width: 200px;
+	padding: 10px;
+	font-size: 12px;
+	top: 140px;
+	left: 240px;
+}
+
+#blurbs div{ opacity: 0; -webkit-transition: all .4s linear 0s; color: #000;}
+
+#blurbs div.active{ opacity: 1; }
